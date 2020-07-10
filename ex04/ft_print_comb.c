@@ -6,11 +6,15 @@
 /*   By: bamulaud <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/08 11:27:54 by bamulaud          #+#    #+#             */
-/*   Updated: 2020/07/08 15:48:00 by bamulaud         ###   ########.fr       */
+/*   Updated: 2020/07/10 14:46:19 by bamulaud         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include<unistd.h>
-int ft_putchar(char c);
+
+int ft_putchar(char c)
+{
+	write(1, &c, 1);
+}
+
 
 void ft_print_comb(void)
 {

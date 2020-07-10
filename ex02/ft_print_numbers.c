@@ -6,18 +6,17 @@
 /*   By: bamulaud <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/07 16:04:13 by bamulaud          #+#    #+#             */
-/*   Updated: 2020/07/07 16:18:16 by bamulaud         ###   ########.fr       */
+/*   Updated: 2020/07/10 14:39:18 by bamulaud         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include<unistd.h>
 
 void ft_putchar(char c)
 {
 	write(1, &c, 1);
 }
 
-int main(void)
+void ft_print_numbersn(void)
 {
 	char letter = '0';
 	
@@ -26,5 +25,5 @@ int main(void)
 		ft_putchar(letter);
 		letter++;
 	}
-	return(0);
+
 }
